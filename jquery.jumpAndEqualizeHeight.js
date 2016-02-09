@@ -49,7 +49,7 @@
                 });
 
             } else {
-                console.log('TODO: function not yet implemented');
+                console.info('TODO: function not yet implemented');
                 return false;
             }
 
@@ -65,7 +65,7 @@
                 }
 
                 if ($elem[0].tagName === 'IMG') {
-                    //если это картинка
+                    //if it's a picture
                     for (var i = firstLineElem; i < lastLineElem; i++) {
                         var itemHeight = $($elem[i]).height();
                         if (itemHeight < maxHeight) {
@@ -75,7 +75,7 @@
                     }
 
                 } else {
-                    //что-то другое
+                    //if it's something else
                     for (var i = firstLineElem; i < lastLineElem; i++) {
 
                         $($elem[i]).height(maxHeight);
