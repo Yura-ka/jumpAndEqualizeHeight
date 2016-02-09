@@ -1,6 +1,15 @@
 # jumpAndEqualizeHeight
 The equalization of the height of the blocks
-
-example: <br>
- $('.row').jumpAndEqualizeHeight(['.thumbnail img', '.thumbnail .caption h3', '.thumbnail .caption h3+p', '.thumbnail']);
+<br>
+```js
+ $(WRAP).jumpAndEqualizeHeight([ELEM]);
+ ```
+ <br>
+ WRAP - the first common dom element for ELEM,<br>
+ELEM - an array of elements that need to align ('.thumbnail img', '.thumbnail')<br>
+###example: <br>
+ ```js
+ $('.row').jumpAndEqualizeHeight(['.thumbnail img', '.thumbnail']);
+ 
+ ```
  
